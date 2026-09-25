@@ -20,7 +20,8 @@
 - `scripts`：运维、探测和任务辅助脚本。
 - `Dockerfile`：多阶段、无 CGO 的镜像构建；运行时默认使用 UID `10001` 的 `app` 用户。
 - `docker-compose.yml`：生产部署入口，默认使用 GHCR 镜像。
-- `.github/workflows/docker-image.yml`：GitHub Actions 镜像构建与发布流程。
+- `.github/workflows/docker-image.yml`：GitHub Actions 镜像构建与 GHCR 发布流程。
+- `.github/workflows/go-binaries.yml`：五平台二进制测试、构建与 tag 发布流程。
 
 ## 本地开发与验证
 
